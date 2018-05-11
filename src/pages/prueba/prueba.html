@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Log in : {{nombre}}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h2>BIENVENIDO {{nombre}}!</h2>
+  <br>
+  <ion-img src='{{ imagen }}'></ion-img>
+  <br>
+  <ion-input type="password" [(ngModel)]='newpassword' placeholder='nueva contraseña'></ion-input>
+  
+  <button ion-button (click)="cambiar()">CAMBIAR CONTRASEÑA</button>
+  <div [innerHTML]=oldpassword></div>
+
+</ion-content>

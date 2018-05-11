@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Log in : {{nombre}}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h2>Conectate!</h2>
+  <p>
+    <label for="nombre">Nombre</label>
+    <ion-input [(ngModel)]='nombre' placeholder="tu nombre"></ion-input>
+    <br>
+    Tu nombre es : {{nombre}}
+    <br>
+    <label for="password">Contraseña</label>
+    <ion-input type="password" [(ngModel)]='password' placeholder="Contraseña"></ion-input>
+    <br>
+    <button ion-button (click)="login()">Log In</button>
+    <button ion-button (click)="crearUsuario()">Crear Usuario</button>
+</ion-content>

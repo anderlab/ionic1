@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Log in : {{nombre}}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h2>REGISTRATÉ!</h2>
+  <p>
+  <label for="nombre">Nombre</label>
+  <ion-input [(ngModel)]='nombre' placeholder="tu nombre"></ion-input>
+  <label for="password">Contraseña</label>
+  <ion-input type="password" [(ngModel)]='password' placeholder="introduzca su contraseña"></ion-input>
+  <label for="imagen">Imagen de perfil</label>
+  <ion-input [(ngModel)]='imagen' placeholder="introduzca url de la imagen"></ion-input>
+  <button ion-button (click)="login()">Registrarse</button>
+
+</ion-content>
